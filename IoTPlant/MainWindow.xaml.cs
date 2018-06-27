@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IoTPlant.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,9 @@ namespace IoTPlant
         public MainWindow()
         {
             InitializeComponent();
+            this.DataContext = component;
         }
+
+        IoTComponent component = new IoTComponent("COM3");
     }
 }
