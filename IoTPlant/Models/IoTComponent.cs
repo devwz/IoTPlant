@@ -55,6 +55,23 @@ namespace IoTPlant.Models
                     try
                     {
                         Plant = JsonConvert.DeserializeObject<IoTPlant>(result);
+
+                        if (plant.Solo == "Umido")
+                        {
+                            plant.Color = "#ADD8E6";
+                        }
+                        else if (plant.Solo == "Moderado")
+                        {
+                            plant.Color = "#98FB98";
+                        }
+                        else if (plant.Solo == "Seco")
+                        {
+                            plant.Color = "#F08080";
+                        }
+
+                        plant.ImgUrl = "Assets/parcialmente-nublado.png";
+                        plant.Condicao = "Parcialmente nublado";
+
                     }
                     catch
                     {
