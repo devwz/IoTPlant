@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace IoTPlant.Models
 {
-    public class Component : INotifyPropertyChanged
+    public class IoTComponent : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -35,7 +35,7 @@ namespace IoTPlant.Models
             }
         }
 
-        public Component(string port)
+        public IoTComponent(string port)
         {
             this.port = new SerialPort(port, 9600);
 

@@ -71,7 +71,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\Component.cs" />
+    <Compile Include="Models\IoTComponent.cs" />
     <Compile Include="Models\IoTPlant.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
