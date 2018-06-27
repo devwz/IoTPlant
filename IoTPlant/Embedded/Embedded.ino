@@ -1,4 +1,4 @@
-﻿
+
 //
 // Arduino Weather
 // Made by DevWz || Wellington Antonio Zaneze
