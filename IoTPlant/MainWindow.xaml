@@ -55,16 +55,26 @@
 
             <Grid Grid.Row="0">
                 <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-                    <WrapPanel HorizontalAlignment="Center">
-                        <TextBlock FontSize="48" Foreground="#F4F7F9" FontWeight="Light" Text="{Binding Path=Plant.Temperatura}" />
-                        <TextBlock FontSize="48" Foreground="#F4F7F9" FontWeight="Light" Text="º C" />
-                    </WrapPanel>
+                    <TextBlock FontSize="48" Foreground="#F4F7F9" FontWeight="Light" Text="Weather" />
                 </StackPanel>
             </Grid>
 
             <Grid Grid.Row="1">
+                <Viewbox Margin="48">
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <WrapPanel HorizontalAlignment="Center">
+                            <TextBlock FontSize="32" Foreground="#F4F7F9" FontWeight="Light" Text="{Binding Path=Plant.Temperatura}" />
+                            <TextBlock FontSize="32" Foreground="#F4F7F9" FontWeight="Light" Text="º C" />
+                        </WrapPanel>
+                    </StackPanel>
+                </Viewbox>
+            </Grid>
+
+            <!--
+            <Grid Grid.Row="1">
                 <Image Source="{Binding Path=Plant.ImgUrl}" />
             </Grid>
+            -->
 
             <Grid Grid.Row="2">
                 <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
@@ -73,7 +83,6 @@
                         <TextBlock FontSize="26" Foreground="#F4F7F9" FontWeight="Light" Text="{Binding Path=Plant.Umidade}" />
                         <TextBlock FontSize="26" Foreground="#F4F7F9" FontWeight="Light" Text="%" />
                     </WrapPanel>
-                    <TextBlock FontSize="26" Foreground="#F4F7F9" FontWeight="Light" Text="{Binding Path=Plant.Condicao}" HorizontalAlignment="Center" />
                 </StackPanel>
             </Grid>
 

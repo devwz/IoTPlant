@@ -13,9 +13,9 @@ namespace IoTPlant.Models
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
-        SerialPort port;
+        readonly SerialPort port;
 
-        public IoTPlant plant = new IoTPlant();
+        IoTPlant plant = new IoTPlant();
         public IoTPlant Plant
         {
             get
@@ -69,8 +69,8 @@ namespace IoTPlant.Models
                             plant.Color = "#F08080";
                         }
 
-                        plant.ImgUrl = "Assets/parcialmente-nublado.png";
-                        plant.Condicao = "Parcialmente nublado";
+                        // plant.ImgUrl = "Assets/parcialmente-nublado.png";
+                        // plant.Condicao = "Parcialmente nublado";
 
                     }
                     catch
